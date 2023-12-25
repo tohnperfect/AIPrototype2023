@@ -9,7 +9,10 @@ if __name__ == "__main__":
     #python commands
     print(f"first run num=100 XX=90")
     subprocess.run(["python","firstpy.py", "--num", "100", "--XX", "90"])
+    print(f"------------------------------------------------")
     print(f"second run num=-10 XX=-90")
     subprocess.run(["python","firstpy.py", "--num", "-10", "--XX", "-90"])
-    print(f"first run num=0")
+    print(f"------------------------------------------------")
+    print(f"third run num=0")
     subprocess.run(["python","firstpy.py", "--num", "0"])
+    print(f"------------------------------------------------")
