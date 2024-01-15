@@ -16,10 +16,11 @@ def hellotohn():
 def home2():
     print('we are in home2')
     # getting input with name = fname in HTML form
-    namein = request.form['first name']
+    namein = request.form.get['first name']
+    agein = request.form.get['age']
     print(namein)
-    
-    return render_template("home.html",namein='tohn')
+    print(agein)
+    return render_template("home.html",name=namein)
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True,port=5001)#host='0.0.0.0',port=5001
