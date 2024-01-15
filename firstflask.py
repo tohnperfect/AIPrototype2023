@@ -12,7 +12,7 @@ def helloworld():
 def hellotohn():
     return "Hello, Tohn!"
 
-@app.route("/home")
+@app.route("/home",  methods=['POST'])
 def homefn():
     print('we are in home')
     # getting input with name = fname in HTML form
