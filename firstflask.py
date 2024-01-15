@@ -16,8 +16,8 @@ def hellotohn():
 def home2():
     print('we are in home2')
     # getting input with name = fname in HTML form
-    namein = request.form.get['first name']
-    agein = request.form.get['age']
+    namein = request.form.get('first name')
+    agein = request.form.get('age')
     print(namein)
     print(agein)
     return render_template("home.html",name=namein)
