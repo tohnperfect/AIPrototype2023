@@ -13,7 +13,7 @@ def hellotohn():
     return "Hello, Tohn!"
 
 @app.route("/home")
-def home2():
+def homefn():
     print('we are in home')
     # getting input with name = fname in HTML form
     namein = request.form.get('fname')
