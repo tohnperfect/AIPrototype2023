@@ -14,7 +14,12 @@ def hellotohn():
 
 @app.route("/home2")
 def home2():
-    return render_template("home.html",name='tohn')
+    print('we are in home2')
+    # getting input with name = fname in HTML form
+    namein = request.form['first name']
+    print(namein)
+    
+    return render_template("home.html",namein='tohn')
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0',debug=True,port=5001)#host='0.0.0.0',port=5001
