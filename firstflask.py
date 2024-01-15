@@ -12,12 +12,12 @@ def helloworld():
 def hellotohn():
     return "Hello, Tohn!"
 
-@app.route("/home2")
+@app.route("/home")
 def home2():
-    print('we are in home2')
+    print('we are in home')
     # getting input with name = fname in HTML form
-    namein = request.form.get('first name')
-    agein = request.form.get('age')
+    namein = request.form.get('fname')
+    agein = request.form.get('lname')
     print(namein)
     print(agein)
     return render_template("home.html",name=namein)
