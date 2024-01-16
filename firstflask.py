@@ -12,7 +12,7 @@ def helloworld():
 def hellotohn():
     return "Hello, Tohn!"
 
-@app.route("/home",  methods=['POST'])
+@app.route("/home",  methods=['POST','GET'])
 def homefn():
     print('we are in home')
     
