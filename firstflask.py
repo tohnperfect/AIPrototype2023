@@ -15,11 +15,11 @@ def hellotohn():
 @app.route("/home",  methods=['POST'])
 def homefn():
     print('we are in home')
-    # getting input with name = fname in HTML form
+    
     namein = request.form.get('fname')
-    agein = request.form.get('lname')
+    lastnamein = request.form.get('lname')
     print(namein)
-    print(agein)
+    print(lastnamein)
     return render_template("home.html",name=namein)
 
 if __name__ == "__main__":
